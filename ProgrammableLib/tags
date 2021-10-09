@@ -1,0 +1,23 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+get_new_dll	dll.c	/^get_new_dll(){$/;"	f
+add_data_to_dll	dll.c	/^add_data_to_dll(dll_t *dll, void *app_data){$/;"	f
+student_	application.c	/^typedef struct student_{$/;"	s	file:
+name	application.c	/^    char name[32];$/;"	m	struct:student_	file:
+age	application.c	/^    int age;$/;"	m	struct:student_	file:
+weight	application.c	/^    int weight;$/;"	m	struct:student_	file:
+rollno	application.c	/^    unsigned int rollno;$/;"	m	struct:student_	file:
+student_t	application.c	/^}student_t;$/;"	t	typeref:struct:student_	file:
+main	application.c	/^main(int argc, char **argv){$/;"	f
+dll_node_	dll.h	/^typedef struct dll_node_{$/;"	s
+data	dll.h	/^    void *data;$/;"	m	struct:dll_node_
+left	dll.h	/^    struct dll_node_ *left;$/;"	m	struct:dll_node_	typeref:struct:dll_node_::dll_node_
+right	dll.h	/^    struct dll_node_ *right;$/;"	m	struct:dll_node_	typeref:struct:dll_node_::dll_node_
+dll_node_t	dll.h	/^}dll_node_t;$/;"	t	typeref:struct:dll_node_
+dll_	dll.h	/^typedef struct dll_{$/;"	s
+head	dll.h	/^    dll_node_t *head;$/;"	m	struct:dll_
+dll_t	dll.h	/^}dll_t;$/;"	t	typeref:struct:dll_
